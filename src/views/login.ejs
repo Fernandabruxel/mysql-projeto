@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <div class="container pequeno">
+    <h1>Login</h1>
+
+    <% if (erro) { %>
+      <p class="erro"><%= erro %></p>
+    <% } %>
+
+    <form action="/login" method="POST">
+      <input type="text" name="nick" placeholder="Nick" required>
+      <input type="password" name="senha" placeholder="Senha" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <p>Não tem conta? <a href="/register">Cadastre-se</a></p>
+  </div>
+
+</body>
+</html>

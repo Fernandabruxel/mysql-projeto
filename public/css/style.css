@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #fff5fa;
+  color: #3a2630;
+  padding: 30px;
+}
+
+/* CENTRALIZA TODAS AS PÁGINAS */
+.container,
+.pequeno {
+  width: 100%;
+  max-width: 850px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #f3b6d2;
+  box-shadow: 0 8px 20px rgba(219, 39, 119, 0.12);
+}
+
+/* LOGIN E CADASTRO */
+.pequeno {
+  max-width: 400px;
+  text-align: center;
+}
+
+/* TÍTULOS */
+h1 {
+  text-align: center;
+  color: #c2185b;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+h2 {
+  color: #ad1457;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+h3 {
+  color: #880e4f;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* CABEÇALHO */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header .btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* FORMULÁRIOS */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e89abc;
+  background: #fffafd;
+  color: #3a2630;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #c2185b;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* BOTÕES */
+button,
+.btn {
+  background: #d63384;
+  color: white;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button:hover,
+.btn:hover {
+  background: #b91d68;
+}
+
+/* PRODUTOS CENTRALIZADOS */
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+/* CARD DE PRODUTO */
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: #fff0f7;
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid #f3b6d2;
+  text-align: center;
+}
+
+.card p {
+  margin-top: 7px;
+  font-size: 14px;
+  color: #5c3b49;
+}
+
+/* LINKS */
+a {
+  color: #c2185b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* AÇÕES */
+.acoes {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* EXCLUIR */
+.danger {
+  background: #e53935;
+}
+
+.danger:hover {
+  background: #b71c1c;
+}
+
+/* ERRO */
+.erro {
+  background: #ffe1e9;
+  color: #a3133a;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
+/* TEXTO LOGIN */
+.pequeno p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  .container,
+  .pequeno {
+    padding: 22px;
+    margin: 25px auto;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .acoes {
+    flex-direction: column;
+  }
+}
+.form-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 500px;
+  background: #fff0f7;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #f3b6d2;
+}
+
+.form-box h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.campo label {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.linha {
+  display: flex;
+  gap: 10px;
+}
+
+.linha .campo {
+  flex: 1;
+}
+
+.voltar {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
